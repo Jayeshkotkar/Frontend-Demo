@@ -1,0 +1,104 @@
+.s6-hero-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 80px;
+    max-width: 1210px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.s6-hero-contain h2 {
+    color: #252B42;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+.s6-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0px;
+    gap: 50px;
+}
+
+.s6-contain img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+.s6-contain pre{
+    color: #374754;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+.s6-profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 13px;
+}
+
+.s6-profile-left{
+    width: 50px;
+    height: 50px;
+}
+
+.s6-profile-right{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+}
+
+.s6-profile-right .title{
+    color: #374754;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+
+.indicator-dots{
+    display: flex;
+    gap: 13px;
+}
+
+.indicator-dots .dot{
+    display: block;
+    height: 23px;
+    width: 23px;
+    border-radius: 35px;
+    background-color: #D8D8D8;
+}
+
+.indicator-dots .dot.active{
+    background-color: #2091F9;
+}
+
+
+/*  for the dot color changing */
+
+.indicator-dots .dot {
+    border: 1px solid #454546;
+    background-color: #2091F9; /* default for inactive dots */
+    margin: 0 4px;
+    transition: background-color 0.3s ease;
+}
+
+.indicator-dots .dot.active {
+    background-color: white; /* active dot color */
+}

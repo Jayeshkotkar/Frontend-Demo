@@ -1,0 +1,218 @@
+.s8-hero-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0px;
+    gap: 100px;
+    max-width: 1210px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.s8-hero-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 50px;
+}
+
+.s8-hero-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+}
+
+.s8-hero-first h2 {
+    color: #252B42;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.s8-hero-first pre {
+    color: #374754;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.s8-hero-second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 50px;
+}
+
+.s8-hero-second .left {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 52px 50px;
+gap: 45px;
+
+width: 453px;
+
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+/* SHADOW */
+box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+border-radius: 20px;
+
+}
+
+.left h4{
+    color: #252B42;
+    margin-left: 110px;
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+.left input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 19px 20px;
+    gap: 47px;
+    width: 353px;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    border-radius: 39px;
+    margin-bottom: 30px;
+}
+
+.left textarea {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 23px 20px 23px 20px;
+    gap: 47px;
+    width: 353px;
+    height: 180px;
+    margin-bottom: 20px;
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    resize: none;
+}
+
+.s8-hero-second .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.icons span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.icons span img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.icons span pre {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #374754;
+    margin: 0;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 516px;
+    height: 344px;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    gap: 30px;
+  }
+  
+  .map iframe {
+    width: 100%;         /* Responsive full width */
+    height: 300px;       /* You can adjust this */
+    border: none;        /* Remove border */
+    border-radius: 6px;  /* Optional: rounded corners */
+  }
+  
+  /* .icons-color a{
+    background-color: #2091F9;
+    /* color: #2091F9; */
+  /* } */ 
+
+  .last-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .last-icons .social-link {
+    display: inline-block;
+  }
+
+  .last-icons .social-link img {
+    width: 40px;
+    height: 40px;
+  }
+
+/* Contact form button styling */
+.left button[type="submit"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 38px;
+    gap: 10px;
+    background: #2091F9;
+    border: 1px solid #2091F9;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.left button[type="submit"]:hover {
+    background: #1a7fd9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(32, 145, 249, 0.3);
+}

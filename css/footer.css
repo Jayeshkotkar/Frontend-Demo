@@ -1,0 +1,134 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+    width: 100%;
+    /* Remove fixed height for better responsiveness */
+    /* height: 567px; */
+    background: #252B42;
+}
+
+.footer-container {
+    max-width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-column h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #FFFFFF;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+
+.contact-item img {
+    width: 32.2px;
+    height: 32.2px;
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.footer-social-icons .social-link {
+    display: inline-block;
+    width: 40.99px;
+    height: 40.99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-icons .social-link img {
+    width: 32.2px;
+    height: 32.2px;
+    filter: brightness(0) invert(1);
+    transition: opacity 0.3s ease;
+}
+
+.footer-social-icons .social-link:hover img {
+    opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .footer-column {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .contact-info {
+        align-items: center;
+    }
+    .footer-social-icons {
+        justify-content: center;
+    }
+}

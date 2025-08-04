@@ -1,0 +1,90 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+    max-width: 1210px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 21px;
+    margin: 53.5px, 737px, 54.5px, 40px;
+    color: #FFFFFF;
+    padding-left: 40px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-item{
+    list-style: none;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.figma-content-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: row;
+    margin-left: 200px;
+    margin:56.5px, 40px, 58.5px, 200px;
+    gap: 25px;
+    padding-right: 40px;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+}
+
+
+.wrap {
+  background: url('/images/bg-hero-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+

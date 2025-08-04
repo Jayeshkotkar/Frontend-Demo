@@ -1,0 +1,68 @@
+.s5-hero-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 80px;
+    max-width: 1210px;
+    margin: 0 auto;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.s5-hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+}
+
+.s5-hero-info h4{
+    color: #252B42;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+.s5-hero-info pre {
+    color: #374754;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+
+.s5-hero-logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    /* gap: 20px; */
+    max-width: 1210px;
+}
+
+.s5-hero-logos .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 31px 40px;
+    gap: 15px;
+    width: 273px;
+    height: 163px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    flex: 0 0 auto;
+}
+
+.logo p{
+    color: #374754;
+}
