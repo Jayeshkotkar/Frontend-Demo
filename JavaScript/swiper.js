@@ -1,49 +1,42 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".s6-contain");
-    const dots = document.querySelectorAll(".indicator-dots .dot");
+const track = document.getElementById('carouselTrack');
+    const dots = document.querySelectorAll('.dot');
+    const totalItems = 3;
     let currentIndex = 0;
-    const intervalTime = 5000; // 5 seconds
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? "block" : "none";
-        });
-
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
-        });
+    function updateCarousel(index, animate = true) {
+      if (!animate) track.style.transition = 'none';
+      else track.style.transition = 'transform 1s ease-in-out';
+      track.style.transform = `translateX(-${index * 100}%)`;
+      updateDots(index % totalItems);
     }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
+    function updateDots(index) {
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
     }
 
-    // Start
-    showSlide(currentIndex);
-    setInterval(nextSlide, intervalTime);
-});
+    function goToNextSlide() {
+      currentIndex++;
+      updateCarousel(currentIndex);
+      if (currentIndex === totalItems) {
+        setTimeout(() => {
+          currentIndex = 0;
+          updateCarousel(currentIndex, false);
+        }, 1000);
+      }
+    }
 
-    
-
-//  for the dot color changing
-
-function updateDots(currentIndex) {
-    const dots = document.querySelectorAll(".indicator-dots .dot");
-    dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === currentIndex);
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        currentIndex = parseInt(dot.getAttribute('data-index'));
+        updateCarousel(currentIndex);
+      });
     });
-}
+
+    setInterval(goToNextSlide, 5000);
 
 
-// disply alert
-
-function dispAlert() {
-    alert("Your query sent successfully");
-}
-
-
-
-
-
-
+    function dispAlert() {
+      alert("Your query sent successfully");
+    }

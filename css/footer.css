@@ -4,8 +4,6 @@
     align-items: center;
     padding: 150px 0px;
     width: 100%;
-    /* Remove fixed height for better responsiveness */
-    /* height: 567px; */
     background: #252B42;
 }
 
@@ -113,7 +111,7 @@
     opacity: 0.8;
 }
 
-/* Responsive design */
+    
 @media (max-width: 1200px) {
     .footer-container {
         flex-direction: column;

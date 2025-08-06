@@ -1,6 +1,4 @@
-/* ===================================== SECTION 3 =========================== */
-
-.s2-feature-content{
+.s2-feature-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,11 +16,11 @@
     margin-bottom: 40px;
 }
 
-.features-heading{
+.features-heading {
     margin-bottom: 10px;
 }
 
-.features-heading h2{
+.features-heading h2 {
     font-weight: 400;
     font-size: 48px;
     line-height: 55px;
@@ -31,11 +29,11 @@
     color: #252B42;
 }
 
-.features-desc{
+.features-desc {
     max-width: 600px;
 }
 
-.features-desc pre{
+.features-desc pre {
     font-weight: 400;
     font-size: 28px;
     line-height: 40px;
@@ -57,7 +55,7 @@
     padding: 0 20px;
 }
 
-.f1-item{
+.f1-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,14 +71,14 @@
     margin-bottom: 10px;
 }
 
-.f1-desc-title{
+.f1-desc-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
 
-.f1-desc-title pre{
+.f1-desc-title pre {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
@@ -91,14 +89,14 @@
     margin: 0;
 }
 
-.f1-desc-text{
+.f1-desc-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
 
-.f1-desc-text pre{
+.f1-desc-text pre {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -109,31 +107,49 @@
     margin: 0;
 }
 
-.video{
+
+.video {
+    position: relative;
+    display: inline-block;
+}
+
+.video video {
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+}
+
+#playIcon {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 100px 100px;
-}
-
-video{
-    height: 658px;
-    width: 1170px;
-    border-radius: 44px;
-    /* margin-top: 100px 100px; */
-    box-shadow: 0px 8.15px 63.14px 0px #00000026;
-}
-
-.play-icon {
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 48px;
     color: white;
-    background: rgba(0, 0, 0, 0.6);
+    background: #2091F9;
     border-radius: 50%;
-    padding: 15px 20px;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
-    display: none; /* Hidden when playing */
+    z-index: 2;
+    user-select: none;
+    transition: background 0.2s;
+    display: none; 
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.play-icon p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+    margin-left: 10px;
+}
+
+#playIcon:hover {
+    background: #1a7dd6;
 }

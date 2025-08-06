@@ -24,6 +24,7 @@
     max-width: 677px;
     height: auto;
     object-fit: contain;
+    padding-right: 70px;
 }
 
 .s4-hero-right-info {
@@ -112,7 +113,6 @@
     border-radius: 39px;
 }
 
-/* .form  */
 button {
     display: flex;
     flex-direction: column;
@@ -136,7 +136,6 @@ button:hover {
     box-shadow: 0 4px 8px rgba(32, 145, 249, 0.3);
 }
 
-/* .form> */
 button>a {
     font-weight: 700;
     font-size: 20px;
@@ -146,7 +145,6 @@ button>a {
     text-decoration: none;
 }
 
-/* Newsletter form button specific styling */
 .form button[type="submit"] {
     font-weight: 700;
     font-size: 20px;
